@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CipherProject">
+    <output-path>$PROJECT_DIR$/out/artifacts/CipherProject</output-path>
+    <root id="archive" name="CipherProject.jar" />
+  </artifact>
+</component>

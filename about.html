@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../Cipher/styles/main_style.css" />
+    <link rel="stylesheet" type="text/css" href="../Cipher/styles/about.css" />
+
+    
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <a>
+                <div id = "menuNav" ></div>
+            </a>
+            <a href = "../Cipher/choice.php">
+                <div id = "mainNav"
+                onmouseover = "showWhat('hovHom')" onmouseout = "hideWhat('hovHom')"></div>
+            </a>
+            <a>
+                <div id = "cypherNav"
+                onmouseover = "showWhat('hovCyp')" onmouseout = "hideWhat('hovCyp')"></div>
+            </a>
+            <a href = "../Cipher/encrypt.php">
+                <div id = "encryptNav"
+                onmouseover = "showWhat('hovEnc')" onmouseout = "hideWhat('hovEnc')"></div>
+            </a>
+            <a href = "../Cipher/decrypt.php">
+                <div id = "decryptNav"
+                onmouseover = "showWhat('hovDec')" onmouseout = "hideWhat('hovDec')"></div>
+            </a>
+            <a href = "../Cipher/showKey.php">
+                <div id = "keyNav"
+                onmouseover = "showWhat('hovKey')" onmouseout = "hideWhat('hovKey')"></div>
+            </a>
+            <a href = "../Cipher/about.html">
+                <div id = "aboutNav"
+                onmouseover = "showWhat('hovAbo')" onmouseout = "hideWhat('hovAbo')"></div>
+            </a>
+            <a href = "../Cipher/contact.php">
+                <div id = "contactNav"
+                onmouseover = "showWhat('hovCon')" onmouseout = "hideWhat('hovCon')"></div>
+            </a>
+            <a href = "../Cipher/home.php">
+                <div id = "exit"
+                onmouseover = "showWhat('hovExit')" onmouseout = "hideWhat('hovExit')"></div>
+            </a>
+        </ul>
+    </nav>
+
+    <div id = "infoButtons">
+        <p>
+            <button id = "cypherInfo">Cypher</button>
+        </p>
+        <p>
+            <button id = "encryptInfo">Encrypt</button>
+        </p>
+        <p>    
+            <button id = "decryptInfo">Decrypt</button>
+        </p>
+        <p>
+            <button id = "showKeyInfo">Show Key</button>
+        </p>
+
+    </div>
+
+    <div id = "box">
+
+        <div id = "info">
+            <p>
+                <div id = "cText">
+                    <p>
+                        In cryptography, a cipher (or cypher) is an algorithm for performing 
+                        encryption or decryption—a series of well-defined steps that can be followed 
+                        as a procedure. An alternative, less common term is encipherment. To encipher 
+                        or encode is to convert information into cipher or code. In common parlance, 
+                        "cipher" is synonymous with "code", as they are both a set of steps that encrypt 
+                        a message; however, the concepts are distinct in cryptography, especially classical 
+                        cryptography.</p><br>
+                    
+                    <p>
+                        Codes generally substitute different length strings of character in 
+                        the output, while ciphers generally substitute the same number of characters 
+                        as are input. There are exceptions and some cipher systems may use slightly
+                        more, or fewer, characters when output versus the number that were input.
+                    </p><br>
+                    <p>
+                    Codes operated by substituting according to a large codebook which linked 
+                    a random string of characters or numbers to a word or phrase. For example, 
+                    "UQJHSE" could be the code for "Proceed to the following coordinates." When 
+                    using a cipher the original information is known as plaintext, and the 
+                    encrypted form as ciphertext. The ciphertext message contains all the 
+                    information of the plaintext message, but is not in a format readable by 
+                    a human or computer without the proper mechanism to decrypt it.
+                    </p><br>
+                    <p>
+                    The operation of a cipher usually depends on a piece of auxiliary 
+                    information, called a key (or, in traditional NSA parlance, a cryptovariable). 
+                    The encrypting procedure is varied depending on the key, which changes the 
+                    detailed operation of the algorithm. A key must be selected before using a 
+                    cipher to encrypt a message. Without knowledge of the key, it should be 
+                    extremely difficult, if not impossible, to decrypt the resulting ciphertext 
+                    into readable plaintext.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <div id = "eText">
+                    <p>
+                        Here we've got two types of encryption:
+                    </p><br>
+                    <p>
+                        <img src = "../Cipher/images/normalBut.png" height="30vh">
+                        By clicking on this icon you will encrypt your files with a random key, 
+                        that our system will give you. If you want to know the key if encrypted file,
+                        go to "Show Key" at any time. If you entered your account, you don't need to 
+                        enter a key for decryption, but if anyone else want to decrypt this file, 
+                        only you can see a key and share it with this person.
+                    </p><br>
+                    <p>
+                        <img src = "../Cipher/images/strongBut.png" height="30vh">
+                        By clicking on this icon you will choose any key you want. 
+                        Choose your key wisely, because if you forget it, we cannot help
+                        you. By choosing this method of encryption, person, who knows a key, 
+                        can decrypt a file, so don't share a key with EVERY PERSON.
+                    </p>
+
+                </div>
+            </p>
+
+            <p>
+                <div id = "dText">
+                    <p>
+                        To decrypt a file, you will need to enter an encryption key.
+                        If a file belongs to you (that means you'd encrypted it) and you 
+                        used the first method (<img src = "../Cipher/images/normalBut.png" height="20vh">), you don't need to 
+                        enter a key, our system knows that the file is your's.
+                    </p><br>
+                    <p>
+                        If a file was encrypted with the second method of encryption 
+                        (<img src = "../Cipher/images/strongBut.png" height="20vh">), 
+                        it's no matter who is owner of a file, you still need to enter a 
+                        key.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <div id = "sText">
+                    <p>
+                        This function help to see an encryption key of a file.
+                    </p><br>
+                    <p>
+                        Only if the file was encrypted by the first method
+                        (<img src = "../Cipher/images/normalBut.png" height="20vh">) 
+                        and you are the owner of this file, you can check the file's encryption 
+                        key. 
+                    </p><br>
+                    <p>
+                        You cannot see the key of the file, that was encrypted by the second method
+                        (<img src = "../Cipher/images/strongBut.png" height="20vh">).
+                    </p>
+                </div>
+            </p>
+        </div>
+
+    </div>
+
+    <div class = "what" id = "hovEnc">Encryption</div>
+    <div class = "what" id = "hovDec">Decryption</div>
+    <div class = "what" id = "hovKey">Show Encryption Key</div>
+    <div class = "what" id = "hovHom">Home</div>
+    <div class = "what" id = "hovCyp">Cypher</div>
+    <div class = "what" id = "hovAbo">About</div>
+    <div class = "what" id = "hovCon">Contact Us</div>
+    <div class = "what" id = "hovExit">Exit Acount</div>
+
+    <script src="../Cipher/javascript/main.js"></script>
+    <script src="../Cipher/javascript/about.js"></script>
+
+</body>
+
+</html>

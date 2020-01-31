@@ -1,0 +1,145 @@
+body {
+    overflow: hidden;
+}
+
+/*** DESIGN OF MAIL BUTTONS ***/
+#cypherTeam, #dor, #sergey {
+    width: 25vw;
+    height: 30vh;
+    visibility: hidden;
+}
+#cypherTeam {
+    animation: showBtnLeft 1s forwards cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+#dor {
+    animation: showBtnBot 1s forwards cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+#sergey {
+    animation: showBtnRight 1s forwards cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+@keyframes showBtnLeft {
+    0% {
+        margin-right: -100%;
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes showBtnBot {
+    0% {
+        margin-bottom: -100%;
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes showBtnRight {
+    0% {
+        margin-left: -100%;
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+/*** DESIGN OF BUTTONS ***/
+div .button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+    width: 70%;
+    height: auto;
+    outline: unset;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 4px #000000, inset 0px 0px 5px #000000;
+    color: white;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+
+}
+div .button:hover {
+    transform: scale(1.2) translate(-42%, -38%);
+    box-shadow: 0px 0px 15px 4px #000000, inset 0px 0px 8px #000000;
+    background: #c4c3c3;
+    color: #424242;
+}
+div .button:active {
+    transform: scale(1.1) translate(-45%, -38%);
+}
+.button img{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+/*** DESIGN OF FORMS ***/
+form {
+    position: relative;
+    display: inline-block;
+    margin-top: 5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 67%;
+    height: 0;
+}
+form textarea {
+    color: white;
+    background: #424242;
+    outline: none;
+    border: 1px solid #c4c3c3;
+    border-radius: 3px;
+    resize: none;
+    width: 100%;
+}
+form input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 32.5%;
+    margin-top: 2%;
+    text-transform: uppercase;
+    width: 35%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #c4c3c3;
+    color: #c4c3c3;
+    background: #424242;
+    transition: all .2s ease-in;
+}
+form input:hover {
+    transform: scale(1.2) ;
+    background: #c4c3c3;
+    color: #424242;
+    box-shadow: 0px 3px 3px 3px #000000;
+}
+
+/*** ANIMATION FOR SHOWING FORM ***/
+@keyframes showForm {
+    100% {
+        height: 70%;
+        margin-top: 16vh; 
+    }
+}
+@keyframes hideForm {
+    0% {
+        height: 70%;
+        margin-top: 16vh; 
+    }
+    100% {
+        height: 0%;
+        margin-top: 6vh;
+    }
+}

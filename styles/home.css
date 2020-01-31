@@ -1,0 +1,186 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*** DESIGN OF BACK SIDE OF SING UP/LOGIN ***/
+#backField {
+    background: #343634;
+    position: absolute; 
+    width: 45%;
+    height: 40%;
+}
+input:not(.button) {
+    overflow: unset;
+    width: 100%;
+    border-width: 0 0 2px 0;
+    border-bottom: 2px solid #807f7f;
+    padding: 1%;
+    margin-bottom: 10%;
+    outline: unset;
+}
+p {
+    padding: 1% 5%;
+    display: flex;
+}
+
+/*** DESIGN OF MAIN FORM FOR SING UP/LOGIN ***/
+#form {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: -15%;
+    left: 5%;
+    width: 50%;
+    height: 130%;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: -10px 10px 10px  #000000d2;
+    z-index: 20;
+    overflow: hidden;
+}
+#signUpForm h3, #loginForm h3 {
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 10%;
+    top: 15%;
+    cursor: default;
+    min-width: 35%;
+    background: #e97d25;
+    box-shadow: -10px 5px 3px  #000000d2;
+    border-radius: 10px;
+}
+#loginForm h3 {
+    right: 10%;
+    box-shadow: 10px 5px 3px  #000000d2;
+}
+#loginForm {
+    visibility: hidden;
+    opacity: 0;
+}
+.fullName {
+    position: absolute;
+    display: flex;
+    top: 35%;
+    width: 100%;
+}
+.unique {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 100%;
+}
+.uniqueLogin {
+    position: absolute;
+    display: block;
+    top: 40%;
+    width: 100%;
+}
+.button {
+    background: #ff7b00;
+    text-transform: uppercase;
+    padding: 2%;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    outline: unset;
+    margin-left: auto;
+    width: 25%;
+}
+.button:hover {
+    background: #29a13d;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 3px  #000000d2;
+}
+a {
+    transition: all .2s linear;
+    color: #3894d1;
+}
+a:hover {
+    transform: scale(1.1);
+    color: #173869;
+}
+
+/*** DESIGN OF TEXT ON BACK SIDE OF MAIN FORMS ***/
+#logInInfo, #signUpInfo {
+    position: absolute;
+    display: block;
+    max-width: 40%;
+    max-height: 60%;
+    top: 20%;
+    left: 63%;
+    cursor: default;
+    color: white;
+    overflow: hidden;
+    z-index: 10;
+}
+#signUpInfo {
+    max-width: 40%;
+    max-height: 72%;
+    left: 7%;
+}
+
+/*** DESIGN OF BUTTONS OF BACK SIDE OF MAIN FORMS ***/
+.changeForm {
+    background: transparent;
+    color: #d4d3d3;
+    text-transform: uppercase;
+    padding: 2% 15%;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    margin: 5% 3%;
+    outline: unset;
+}
+.changeForm:hover {
+    background: #d4d3d3;
+    transform: scale(1.1);
+    color:#343634;
+    border-radius: 3px;
+}
+.changeForm:active {
+    transform: scale(.95);
+}
+
+/*** ANIMATIONS FOR MOVEMENT OF FORMS ***/
+@keyframes showLoginForm{
+    100% {
+        left: 46%;
+        box-shadow: 10px 10px 10px  #000000d2;
+    }
+}
+@keyframes showSignUpForm{
+    0% {
+        left: 46%;
+        box-shadow: 10px 10px 10px  #000000d2;
+    }
+    100% {
+        left: 5%;
+        box-shadow: -10px 10px 10px  #000000d2;
+    }
+}
+
+/*** ANIMATIONS FOR SHOWING/HIDING CONTENT OF MAIN FORMS ***/
+@keyframes hideForm {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+@keyframes showForm {
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}

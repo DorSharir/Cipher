@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ProjectCipher:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProjectCipher_jar</output-path>
+    <root id="archive" name="ProjectCipher.jar">
+      <element id="module-output" name="ProjectCipher" />
+    </root>
+  </artifact>
+</component>

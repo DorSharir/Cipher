@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(-90deg, #16222A 10%, #3A6073 90%);
+    font: normal 15px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*** DESIGN OF NAVIGATION ***/
+#menuNav {
+    background: url("../images/menuNav.png") no-repeat;
+    background-size: 100%; 
+    position: fixed;
+    display: block;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 50;
+    transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    cursor: pointer;
+  }
+#mainNav, #cypherNav, #encryptNav,
+#decryptNav, #keyNav, #aboutNav, #contactNav, #exit {
+    background: url("../images/mainNav.png") no-repeat;
+    background-size: 100%; 
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    cursor: pointer;
+}
+#cypherNav {
+    background: url("../images/cypherNav.png") no-repeat;
+    background-size: 100%; 
+    top: 10%;
+    left: 50%;
+    z-index: 25;
+}
+#encryptNav {
+    background: url("../images/encryptNav.png") no-repeat;
+    background-size: 100%; 
+    top: 10%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 23;
+}
+#decryptNav {
+    background: url("../images/decryptNav.png") no-repeat;
+    background-size: 100%; 
+    top: 10%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 23;
+}
+#keyNav {
+    background: url("../images/keyNav.png") no-repeat ;
+    background-size: 100%; 
+    top: 10%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 23;
+}
+#aboutNav {
+    background: url("../images/aboutNav.png") no-repeat;
+    background-size: 100%; 
+    top: 10%;
+    left: 50%;
+}
+#contactNav {
+    background: url("../images/contactNav.png") no-repeat;
+    background-size: 100%; 
+    top: 10%;
+    left: 50%;
+}
+#exit {
+    background: url("../images/exit.png") no-repeat;
+    background-size: 100%; 
+    top: 10%;
+    left: 50%;
+}
+#menuNav:hover, #mainNav:hover, #cypherNav:hover, #encryptNav:hover,
+#decryptNav:hover, #keyNav:hover, #aboutNav:hover, #contactNav:hover, #exit:hover {
+    transform: scale(1.2) translate(-40%, -45%);
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.75);
+}
+
+/*** DESIGN OF HELP POPUP ***/
+.what {
+    position: absolute;
+    text-align: center;
+    border: 1px solid white;
+    background: #504f4f;
+    color: white;
+    cursor: default;
+    border-radius: 10px;
+    padding: .5% .5%;
+    width: auto;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    bottom: 15vh;
+    left: 50vw; 
+    transition: all .4s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+/*** ANIMATION OF HELP POPUP ***/
+@keyframes showWhat {
+
+    100% {
+        bottom: 37vh;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes hideWhat {
+    100% {
+        
+    }
+}
+
+/*** ANIMATION OF NAVIGATION ***/
+@keyframes showNav {
+    100% {
+        top: var(--t, 10%);
+        left: var(--l, 50%);
+    }
+}
+@keyframes hideNav {
+    0% {
+        top: var(--t, 10%);
+        left: var(--l, 50%);
+    }
+    100% {
+        top: 10%;
+        left: 50%;
+    }
+}
+@keyframes showCyphNav {
+    0% {
+        top: 10%;
+        left: 42.5%;
+    }
+    100% {
+        top: var(--t, 10%);
+        left: var(--l, 50%);
+    }
+}
+@keyframes hideCyphNav {
+    0% {
+        top: var(--t, 10%);
+        left: var(--l, 50%);
+    }
+    100% {
+        top: 10%;
+        left: 42.5%;
+    }
+}
+

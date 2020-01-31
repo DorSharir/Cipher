@@ -1,0 +1,47 @@
+/*** DESIGN OF BUTTON ***/
+button {
+    background: url('../images/showKey.png');
+    background-size: 100%;
+}
+
+/*** DESIGN OF POPUP WITH KEY ***/
+#showKey {
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    top: 50vh;
+    background: #535353;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #ffffff;
+}
+#showKey h3 {
+    margin-top: 3%;
+    letter-spacing: 5px;
+    font-weight: 50;
+}
+
+/*** DESIGN OF BUTTON IN POPUP WITH KEY ***/
+#button {
+    width: 30%;
+    margin: 5% 0 5% auto;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid white;
+    background: #535353;
+    transition: all .2s linear;
+    outline: unset;
+} 
+#button:hover {
+    transform: scale(1.2);
+    background: white;
+    color: #535353;
+    box-shadow: 5px 10px 10px 1px rgba(0,0,0,50);
+}
+
